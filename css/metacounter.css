@@ -1,0 +1,7 @@
+/* MetaData stats */
+span.metastats {
+	margin-left: 10px;
+}
+span.metastats.over {
+	color: red;
+}

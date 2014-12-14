@@ -1,0 +1,6 @@
+LeftAndMain:
+  extensions:
+    - MetaCounterCMSExtension
+Page:
+  extensions:
+    - MetaCounterSiteTreeExtension
