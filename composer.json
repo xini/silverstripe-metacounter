@@ -1,5 +1,5 @@
 {
-	"name": "xini/silverstripe-metacounter",
+	"name": "xini/metacounter",
 	"description": "Adds a counter to the meta fields for remaining characters",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "metadata", "counter"],
