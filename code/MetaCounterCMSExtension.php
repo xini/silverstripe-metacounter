@@ -1,18 +1,18 @@
 <?php
-class MetaCounterCMSExtension extends LeftAndMainExtension {
+class MetaCounterCMSExtension extends LeftAndMainExtension
+{
 
-	public function init() {
+    public function init()
+    {
+        parent::init();
 
-		parent::init();
+        Requirements::css($this->ModuleBase() . '/css/metacounter.css');
 
-		Requirements::css($this->ModuleBase() . '/css/metacounter.css');
+        Requirements::javascript($this->ModuleBase() . '/javascript/metacounter.js');
+    }
 
-		Requirements::javascript($this->ModuleBase() . '/javascript/metacounter.js');
-
-	}
-
-	private function ModuleBase() {
-		return basename(dirname(dirname(__FILE__)));
-	}
-
+    private function ModuleBase()
+    {
+        return basename(dirname(dirname(__FILE__)));
+    }
 }
