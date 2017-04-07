@@ -11,7 +11,9 @@
 				if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
 					e.preventDefault();
 				}
-				/* prevent multiple spaces */
+			},
+			onfocusout: function(e){
+				/* remove multiple spaces */
 				this.val(this.val().replace(/\s+/g, ' '));
 			},
 			onmatch: function(){
