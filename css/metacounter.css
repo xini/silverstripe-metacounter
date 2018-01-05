@@ -2,6 +2,9 @@
 span.metastats {
 	margin-left: 10px;
 }
-span.metastats.over {
+span.metastats.orange {
+	color: orange;
+}
+span.metastats.red {
 	color: red;
 }

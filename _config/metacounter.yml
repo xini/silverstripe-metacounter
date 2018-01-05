@@ -1,6 +1,15 @@
 LeftAndMain:
-  extensions:
-    - MetaCounterCMSExtension
+  extra_requirements_javascript:
+    - metacounter/javascript/metacounter.js
+  extra_requirements_css:
+    - metacounter/css/metacounter.css
+    
 Page:
   extensions:
     - MetaCounterSiteTreeExtension
+    
+MetaCounterSiteTreeExtension:
+  meta_title_length: 55
+  meta_title_length_extended: 55
+  meta_description_length: 160
+  meta_description_length_extended: 300
