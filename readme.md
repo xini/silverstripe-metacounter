@@ -11,7 +11,9 @@ Two levels of limits can be configured to allow longer texts for certain search 
 
 ## Requirements
 
-* SilverStripe CMS ~3.1
+* SilverStripe CMS 4.x
+
+Note: this version is compatible with SilverStripe 4. For SilverStripe 3, please see the [1.1 release line](https://github.com/xini/silverstripe-metacounter/tree/1.1).
 
 ## Installation
 
@@ -28,7 +30,7 @@ Then run dev/build.
 The default limits are as follows and can be overridden in your site's config.yml:
 
 ```
-MetaCounterSiteTreeExtension:
+Innoweb\MetaCounter\Model\SiteTreeExtension:
   meta_title_length: 55
   meta_title_length_extended: 55
   meta_description_length: 160
