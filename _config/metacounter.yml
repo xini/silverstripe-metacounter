@@ -1,14 +1,21 @@
-LeftAndMain:
+---
+name: metacounter
+---
+SilverStripe\Core\Injector\Injector:
+  MetaCounterSiteTreeExtension:
+    class: Innoweb\MetaCounter\Model\SiteTreeExtension
+
+SilverStripe\Admin\LeftAndMain:
   extra_requirements_javascript:
-    - metacounter/javascript/metacounter.js
+    - 'innoweb/silverstripe-metacounter: client/dist/javascript/metacounter.min.js'
   extra_requirements_css:
-    - metacounter/css/metacounter.css
-    
+    - 'innoweb/silverstripe-metacounter: client/dist/css/metacounter.min.css'
+
 Page:
   extensions:
-    - MetaCounterSiteTreeExtension
-    
-MetaCounterSiteTreeExtension:
+    - Innoweb\MetaCounter\Model\SiteTreeExtension
+
+Innoweb\MetaCounter\Model\SiteTreeExtension:
   meta_title_length: 55
   meta_title_length_extended: 55
   meta_description_length: 160
