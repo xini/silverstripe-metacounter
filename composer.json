@@ -1,19 +1,27 @@
 {
 	"name": "xini/silverstripe-metacounter",
 	"description": "Adds a counter to the meta fields for remaining characters",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"license": "BSD-3-Clause",
 	"keywords": ["silverstripe", "metadata", "counter", "limit"],
 	"authors": [{
 		"name": "Florian Thoma",
 		"homepage": "http://www.innoweb.com.au"
 	}],
-	"require":
-	{
-		"silverstripe/framework": "~3.1",
-		"silverstripe/cms": "~3.1"
+	"require": {
+		"silverstripe/cms": "^4"
+	},
+	"suggest": {
+		"kinglozzer/metatitle": "Adds meta-title field"
+	},
+	"autoload": {
+		"psr-4": {
+			"Innoweb\\MetaCounter\\": "src/"
+		}
 	},
 	"extra": {
-		"installer-name": "metacounter"
+		"expose": [
+			"client/dist"
+		]
 	}
 }
