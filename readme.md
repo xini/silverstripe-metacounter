@@ -41,6 +41,30 @@ Once the text exceeds the configured 'length' of a field the counter will turn o
 
 If 'length_extended' is not configured or if it is the same as 'length', the counter will turn red if the text exceeds 'length'.
 
+## Troubleshooting
+
+Sometimes you may add a MetaTitle field to your Page sub/class, with correct length configurations, but no counter appears.
+
+If you have added the field manually rather than via `kinglozzer/metatitle` sometimes the Page extension in this module will run before your MetaTitle field is present (and as result there is no field for the counter to attach to).
+
+To protect against this, use `beforeUpdateCMSFields()` inside your `getCMSFields()`:
+
+```
+public function getCMSFields()
+{
+    $this->beforeUpdateCMSFields(function(FieldList $fields) {
+        $fields->insertBefore(
+            'MetaDescription',
+            TextField::create('MetaTitle', $this->fieldLabel('MetaTitle'))
+        ); 
+    });
+    
+    $fields = parent::getCMSFields();
+    // your other class-specific CMS fields setup
+    return $fields;
+}
+```
+
 ## License
 
 BSD 3-Clause License, see [License](license.md)
