@@ -1,5 +1,5 @@
 {
-	"name": "xini/silverstripe-metacounter",
+	"name": "innoweb/silverstripe-metacounter",
 	"description": "Adds a counter to the meta fields for remaining characters",
 	"type": "silverstripe-vendormodule",
 	"license": "BSD-3-Clause",
@@ -13,6 +13,9 @@
 	},
 	"suggest": {
 		"kinglozzer/metatitle": "Adds meta-title field"
+	},
+	"replace": {
+		"xini/silverstripe-metacounter": "*"
 	},
 	"autoload": {
 		"psr-4": {

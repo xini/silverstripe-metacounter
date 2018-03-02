@@ -7,9 +7,9 @@ SilverStripe\Core\Injector\Injector:
 
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_javascript:
-    - 'xini/silverstripe-metacounter: client/dist/javascript/metacounter.min.js'
+    - 'innoweb/silverstripe-metacounter: client/dist/javascript/metacounter.min.js'
   extra_requirements_css:
-    - 'xini/silverstripe-metacounter: client/dist/css/metacounter.min.css'
+    - 'innoweb/silverstripe-metacounter: client/dist/css/metacounter.min.css'
 
 Page:
   extensions:

@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [2.0.0]
 
 * module upgraded for SilverStripe 4.x compatibility
+* vendor name change to innoweb
 
 ## [1.1.0]
 

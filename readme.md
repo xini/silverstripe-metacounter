@@ -1,7 +1,7 @@
 # SilverStripe Metadata Limit Counter
 
-[![Version](http://img.shields.io/packagist/v/xini/silverstripe-metacounter.svg?style=flat-square)](https://packagist.org/packages/xini/silverstripe-metacounter)
-[![License](http://img.shields.io/packagist/l/xini/silverstripe-metacounter.svg?style=flat-square)](license.md)
+[![Version](http://img.shields.io/packagist/v/innoweb/silverstripe-metacounter.svg?style=flat-square)](https://packagist.org/packages/innoweb/silverstripe-metacounter)
+[![License](http://img.shields.io/packagist/l/innoweb/silverstripe-metacounter.svg?style=flat-square)](license.md)
 
 ## Overview
 
@@ -19,7 +19,7 @@ Note: this version is compatible with SilverStripe 4. For SilverStripe 3, please
 
 Install the module using composer:
 ```
-composer require xini/silverstripe-metacounter dev-master
+composer require innoweb/silverstripe-metacounter dev-master
 ```
 or download or git clone the module into a ‘metacounter’ directory in your webroot.
 
