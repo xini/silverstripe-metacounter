@@ -15,7 +15,7 @@
 		"kinglozzer/metatitle": "Adds meta-title field"
 	},
 	"replace": {
-		"xini/silverstripe-metacounter": "*"
+		"xini/silverstripe-metacounter": "self.version"
 	},
 	"autoload": {
 		"psr-4": {
