@@ -1,4 +1,4 @@
-LeftAndMain:
+CMSMain:
   extra_requirements_javascript:
     - metacounter/javascript/metacounter.js
   extra_requirements_css:
