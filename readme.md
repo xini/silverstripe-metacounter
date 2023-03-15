@@ -11,9 +11,9 @@ Two levels of limits can be configured to allow longer texts for certain search 
 
 ## Requirements
 
-* SilverStripe CMS 4.x
+* SilverStripe CMS 5.x
 
-Note: this version is compatible with SilverStripe 4. For SilverStripe 3, please see the [1.1 release line](https://github.com/xini/silverstripe-metacounter/tree/1.1).
+Note: this version is compatible with SilverStripe 5. For SilverStripe 4, please see the [2 release line](https://github.com/xini/silverstripe-metacounter/tree/2). For SilverStripe 3, please see the [1.1 release line](https://github.com/xini/silverstripe-metacounter/tree/1.1).
 
 ## Installation
 
@@ -21,7 +21,6 @@ Install the module using composer:
 ```
 composer require innoweb/silverstripe-metacounter dev-master
 ```
-or download or git clone the module into a ‘metacounter’ directory in your webroot.
 
 Then run dev/build.
 
@@ -37,15 +36,15 @@ Innoweb\MetaCounter\Model\SiteTreeExtension:
   meta_description_length_extended: 300
 ```
 
-Once the text exceeds the configured 'length' of a field the counter will turn orange, once it exceeds 'length_extended' it will turn red and count backwards.
+Once the text exceeds the configured `length` of a field the counter will turn orange, once it exceeds `length_extended` it will turn red and count backwards.
 
-If 'length_extended' is not configured or if it is the same as 'length', the counter will turn red if the text exceeds 'length'.
+If `length_extended` is not configured or if it is the same as `length`, the counter will turn red if the text exceeds `length`.
 
 ## Troubleshooting
 
 Sometimes you may add a MetaTitle field to your Page sub/class, with correct length configurations, but no counter appears.
 
-If you have added the field manually rather than via `kinglozzer/metatitle` sometimes the Page extension in this module will run before your MetaTitle field is present (and as result there is no field for the counter to attach to).
+If you have added the field manually rather than via [kinglozzer/metatitle](https://github.com/kinglozzer/silverstripe-metatitle) sometimes the Page extension in this module will run before your MetaTitle field is present (and as result there is no field for the counter to attach to).
 
 To protect against this, use `beforeUpdateCMSFields()` inside your `getCMSFields()`:
 

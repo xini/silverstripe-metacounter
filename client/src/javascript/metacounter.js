@@ -2,7 +2,7 @@
 	$.entwine('ss', function($) {
 
 		/* Provide character stats on MetaDescription & MetaTitle input fields */
-		$('input#Form_EditForm_MetaTitle, textarea#Form_EditForm_MetaDescription').entwine({
+		$('input.js-meta-counter, textarea.js-meta-counter').entwine({
 			onkeyup: function() {
 				this.updateStats();
 			},
@@ -33,22 +33,24 @@
 						var infoLabel = '';
 						if (chars > limitExtended) {
 							$('#' + this.attr('id') + 'Stats').removeClass('orange').addClass('red');
-							infoLabel = '';
+							infoLabel = ' (too long)';
 						} else if (chars > limit) {
 							$('#' + this.attr('id') + 'Stats').removeClass('red').addClass('orange');
-							infoLabel = ' (cut off by most search engines)';
+							infoLabel = ' characters left (cut off by most search engines).';
 						} else {
 							$('#' + this.attr('id') + 'Stats').removeClass('red').removeClass('orange');
-							infoLabel = '';
+							infoLabel = ' characters left.';
 						}
 						result = (limitExtended - chars) + infoLabel;
 					} else {
 						if (chars > limit) {
 							$('#' + this.attr('id') + 'Stats').addClass('red');
+							infoLabel = ' (too long)';
 						} else {
 							$('#' + this.attr('id') + 'Stats').removeClass('red');
+							infoLabel = ' characters left.';
 						}
-						result = limit - chars;
+						result = (limit - chars) + infoLabel;
 					}
 					$('#' + this.attr('id') + 'Stats').text(result);
 				}

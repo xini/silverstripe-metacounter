@@ -18,6 +18,7 @@ class SiteTreeExtension extends \SilverStripe\CMS\Model\SiteTreeExtension {
                 if ($lengthExtended && $lengthExtended > 0 && $lengthExtended != $length) {
                     $field->setAttribute('data-length-extended', $lengthExtended);
                 }
+				$field->addExtraClass('js-meta-counter');
             }
         }
 
@@ -30,6 +31,7 @@ class SiteTreeExtension extends \SilverStripe\CMS\Model\SiteTreeExtension {
                 if ($lengthExtended && $lengthExtended > 0 && $lengthExtended != $length) {
                     $field->setAttribute('data-length-extended', $lengthExtended);
                 }
+				$field->addExtraClass('js-meta-counter');
             }
         }
 
