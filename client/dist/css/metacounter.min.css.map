@@ -1,1 +1,0 @@
-{"version":3,"sources":["metacounter.css"],"names":[],"mappings":"AACA,eACC,QAAA,aACA,WAAA,IAED,sBACC,MAAA,OAED,mBACC,MAAA","file":"metacounter.min.css","sourcesContent":["/* MetaData stats */\nspan.metastats {\n\tdisplay: inline-block;\n\tmargin-top: 5px;\n}\nspan.metastats.orange {\n\tcolor: orange;\n}\nspan.metastats.red {\n\tcolor: red;\n}\n"]}

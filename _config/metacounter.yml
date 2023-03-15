@@ -1,15 +1,11 @@
 ---
 name: metacounter
 ---
-SilverStripe\Core\Injector\Injector:
-  MetaCounterSiteTreeExtension:
-    class: Innoweb\MetaCounter\Model\SiteTreeExtension
-
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_javascript:
-    - 'innoweb/silverstripe-metacounter: client/dist/javascript/metacounter.min.js'
+    - 'innoweb/silverstripe-metacounter: client/dist/javascript/metacounter.js'
   extra_requirements_css:
-    - 'innoweb/silverstripe-metacounter: client/dist/css/metacounter.min.css'
+    - 'innoweb/silverstripe-metacounter: client/dist/css/metacounter.css'
 
 Page:
   extensions:
