@@ -9,7 +9,7 @@
 		"homepage": "http://www.innoweb.com.au"
 	}],
 	"require": {
-		"silverstripe/cms": "^4"
+		"silverstripe/cms": "^5"
 	},
 	"suggest": {
 		"kinglozzer/metatitle": "Adds meta-title field"
